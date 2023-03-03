@@ -1,0 +1,6 @@
+{
+  "startUrl": "https://demoqa.com/books",
+  "apiUrl": "https://demoqa.com/",
+  "timeoutPageLoad": 30,
+  "timeoutImplicit": 15
+}
