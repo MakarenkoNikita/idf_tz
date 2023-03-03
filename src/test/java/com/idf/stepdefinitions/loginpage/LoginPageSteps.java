@@ -8,7 +8,7 @@ public class LoginPageSteps {
     private static final LoginPage page = new LoginPage();
 
     public static void isLoginPageDisplayed() {
-        Assert.assertTrue(page.isDisplayed(), "Login page ,ust be displayed");
+        Assert.assertTrue(page.isDisplayed(), "Login page must be displayed");
     }
 
     public static void loginAsSavedUser(String login, String password) {

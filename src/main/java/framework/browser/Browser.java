@@ -42,7 +42,6 @@ public class Browser {
 
     public void goTo(String url) {
         infoAction(format("Navigate to [%s]", url));
-        System.out.println(url);
         driver.navigate().to(url);
     }
 
@@ -64,10 +63,12 @@ public class Browser {
     }
 
     public void setTimeoutPageLoad(int second) {
+        infoAction(format("set timeout page load - %s seconds", second));
         driver.manage().timeouts().pageLoadTimeout(second, TimeUnit.SECONDS);
     }
 
     public void setImplicitWait(int second) {
+        infoAction(format("set implicitly timeout page load - %s seconds", second));
         driver.manage().timeouts().implicitlyWait(second, TimeUnit.SECONDS);
     }
 }
